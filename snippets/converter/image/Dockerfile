@@ -11,7 +11,7 @@
 # limitations under the License.
 # ==============================================================================
 
-FROM python:3.6
+FROM python:3.10.11
 # COPY requirements.txt /app/requirements.txt
 RUN curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 RUN echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list && apt-get update && apt install edgetpu-compiler=15.0 -y 
