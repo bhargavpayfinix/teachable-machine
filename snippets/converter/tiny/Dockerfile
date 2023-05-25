@@ -11,7 +11,7 @@
 # limitations under the License.
 # ==============================================================================
 
-FROM python:3.6
+FROM python:3.12.0b1
 
 RUN pip install --upgrade pip
 RUN pip install fastapi==0.41.0 pydantic==0.32.2 Pillow==6.2.0 starlette==0.12.9 six==1.12.0 uvicorn==0.9.0 promise==2.2.1 httptools==0.0.13 gunicorn==20.0.4 python-multipart==0.0.5 aiofiles==0.4.0
