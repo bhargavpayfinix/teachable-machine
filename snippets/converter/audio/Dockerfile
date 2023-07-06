@@ -11,7 +11,7 @@
 # limitations under the License.
 # ==============================================================================
 
-FROM python:3.6
+FROM python:3.8
 # COPY requirements.txt /app/requirements.txt
 # RUN apt-cache showpkg edgetpu
 RUN mkdir -p /tmp/tfjs-sc-model
